@@ -31,5 +31,11 @@ namespace July5WindowsFormsApp
             };
             p.save();
         }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Goodbye");
+            System.Environment.Exit(0);
+        }
     }
 }
