@@ -9,6 +9,7 @@ namespace July5WindowsFormsApp.Model
 {
     class Project
     {
+        static private List<Project> l = new List<Project>();
         public int Number { get; set; }
         public string Date { get; set; }
         public int Inv_Num { get; set; }
@@ -17,7 +18,11 @@ namespace July5WindowsFormsApp.Model
         public double Price { get; set; }
         public void save()
         {
-            MessageBox.Show("Saved successfully");
+            l.Add(this);
+        }
+        static public List<Project> GetAllProducts()
+        {
+            return l;
         }
     }
 }
