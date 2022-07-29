@@ -9,3 +9,4 @@ C:\Users\USER\Documents\Cs223 projects\July5WindowsFormsApp\July5WindowsFormsApp
 C:\Users\USER\Documents\Cs223 projects\July5WindowsFormsApp\July5WindowsFormsApp\obj\Debug\July5WindowsFormsApp.csproj.CoreCompileInputs.cache
 C:\Users\USER\Documents\Cs223 projects\July5WindowsFormsApp\July5WindowsFormsApp\obj\Debug\July5WindowsFormsApp.exe
 C:\Users\USER\Documents\Cs223 projects\July5WindowsFormsApp\July5WindowsFormsApp\obj\Debug\July5WindowsFormsApp.pdb
+C:\Users\USER\Documents\Cs223 projects\July5WindowsFormsApp\July5WindowsFormsApp\obj\Debug\July5WindowsFormsApp.loginForm.resources

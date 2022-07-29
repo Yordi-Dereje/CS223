@@ -45,15 +45,23 @@
             this.btnCancel = new System.Windows.Forms.Button();
             this.DGV = new System.Windows.Forms.DataGridView();
             this.errorPro1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.Chk_list = new System.Windows.Forms.CheckedListBox();
+            this.Yes = new System.Windows.Forms.RadioButton();
+            this.No = new System.Windows.Forms.RadioButton();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.DisplayUserName = new System.Windows.Forms.Label();
+            this.Additional_Service = new System.Windows.Forms.Label();
+            this.IsComplete = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.DGV)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorPro1)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblNum
             // 
             this.lblNum.AutoSize = true;
             this.lblNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNum.Location = new System.Drawing.Point(115, 33);
+            this.lblNum.Location = new System.Drawing.Point(216, 34);
             this.lblNum.Name = "lblNum";
             this.lblNum.Size = new System.Drawing.Size(73, 22);
             this.lblNum.TabIndex = 0;
@@ -63,7 +71,7 @@
             // 
             this.lbldate.AutoSize = true;
             this.lbldate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbldate.Location = new System.Drawing.Point(241, 33);
+            this.lbldate.Location = new System.Drawing.Point(342, 34);
             this.lbldate.Name = "lbldate";
             this.lbldate.Size = new System.Drawing.Size(48, 22);
             this.lbldate.TabIndex = 1;
@@ -73,7 +81,7 @@
             // 
             this.lblinvnum.AutoSize = true;
             this.lblinvnum.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblinvnum.Location = new System.Drawing.Point(594, 33);
+            this.lblinvnum.Location = new System.Drawing.Point(695, 34);
             this.lblinvnum.Name = "lblinvnum";
             this.lblinvnum.Size = new System.Drawing.Size(151, 22);
             this.lblinvnum.TabIndex = 2;
@@ -82,7 +90,7 @@
             // tbNum
             // 
             this.tbNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbNum.Location = new System.Drawing.Point(118, 71);
+            this.tbNum.Location = new System.Drawing.Point(219, 72);
             this.tbNum.Name = "tbNum";
             this.tbNum.Size = new System.Drawing.Size(100, 28);
             this.tbNum.TabIndex = 3;
@@ -90,7 +98,7 @@
             // tbInvNum
             // 
             this.tbInvNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbInvNum.Location = new System.Drawing.Point(597, 71);
+            this.tbInvNum.Location = new System.Drawing.Point(698, 72);
             this.tbInvNum.Name = "tbInvNum";
             this.tbInvNum.Size = new System.Drawing.Size(163, 28);
             this.tbInvNum.TabIndex = 4;
@@ -98,7 +106,7 @@
             // dateTimePicker1
             // 
             this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(246, 69);
+            this.dateTimePicker1.Location = new System.Drawing.Point(347, 70);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(324, 28);
             this.dateTimePicker1.TabIndex = 5;
@@ -107,7 +115,7 @@
             // 
             this.lblObjName.AutoSize = true;
             this.lblObjName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblObjName.Location = new System.Drawing.Point(118, 145);
+            this.lblObjName.Location = new System.Drawing.Point(219, 146);
             this.lblObjName.Name = "lblObjName";
             this.lblObjName.Size = new System.Drawing.Size(114, 22);
             this.lblObjName.TabIndex = 6;
@@ -116,7 +124,7 @@
             // tbObjName
             // 
             this.tbObjName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbObjName.Location = new System.Drawing.Point(118, 183);
+            this.tbObjName.Location = new System.Drawing.Point(219, 184);
             this.tbObjName.Name = "tbObjName";
             this.tbObjName.Size = new System.Drawing.Size(642, 28);
             this.tbObjName.TabIndex = 7;
@@ -124,7 +132,7 @@
             // tbCount
             // 
             this.tbCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbCount.Location = new System.Drawing.Point(118, 287);
+            this.tbCount.Location = new System.Drawing.Point(219, 288);
             this.tbCount.Name = "tbCount";
             this.tbCount.Size = new System.Drawing.Size(100, 28);
             this.tbCount.TabIndex = 8;
@@ -132,7 +140,7 @@
             // tbPrice
             // 
             this.tbPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbPrice.Location = new System.Drawing.Point(319, 287);
+            this.tbPrice.Location = new System.Drawing.Point(389, 288);
             this.tbPrice.Name = "tbPrice";
             this.tbPrice.Size = new System.Drawing.Size(100, 28);
             this.tbPrice.TabIndex = 9;
@@ -141,7 +149,7 @@
             // 
             this.lblCount.AutoSize = true;
             this.lblCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCount.Location = new System.Drawing.Point(121, 251);
+            this.lblCount.Location = new System.Drawing.Point(222, 252);
             this.lblCount.Name = "lblCount";
             this.lblCount.Size = new System.Drawing.Size(58, 22);
             this.lblCount.TabIndex = 10;
@@ -151,7 +159,7 @@
             // 
             this.lblPrice.AutoSize = true;
             this.lblPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPrice.Location = new System.Drawing.Point(319, 250);
+            this.lblPrice.Location = new System.Drawing.Point(389, 251);
             this.lblPrice.Name = "lblPrice";
             this.lblPrice.Size = new System.Drawing.Size(51, 22);
             this.lblPrice.TabIndex = 11;
@@ -160,9 +168,9 @@
             // btnAdd
             // 
             this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdd.Location = new System.Drawing.Point(508, 272);
+            this.btnAdd.Location = new System.Drawing.Point(606, 432);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(93, 43);
+            this.btnAdd.Size = new System.Drawing.Size(74, 41);
             this.btnAdd.TabIndex = 12;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = true;
@@ -171,9 +179,9 @@
             // btnCancel
             // 
             this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancel.Location = new System.Drawing.Point(655, 272);
+            this.btnCancel.Location = new System.Drawing.Point(753, 432);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(105, 43);
+            this.btnCancel.Size = new System.Drawing.Size(86, 41);
             this.btnCancel.TabIndex = 13;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
@@ -182,22 +190,105 @@
             // DGV
             // 
             this.DGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DGV.Location = new System.Drawing.Point(12, 385);
+            this.DGV.Location = new System.Drawing.Point(15, 500);
             this.DGV.Name = "DGV";
             this.DGV.RowHeadersWidth = 51;
             this.DGV.RowTemplate.Height = 24;
-            this.DGV.Size = new System.Drawing.Size(857, 279);
+            this.DGV.Size = new System.Drawing.Size(1028, 289);
             this.DGV.TabIndex = 14;
             // 
             // errorPro1
             // 
             this.errorPro1.ContainerControl = this;
             // 
+            // Chk_list
+            // 
+            this.Chk_list.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Chk_list.FormattingEnabled = true;
+            this.Chk_list.Items.AddRange(new object[] {
+            "Transportation",
+            "Installation",
+            "Load/Unload"});
+            this.Chk_list.Location = new System.Drawing.Point(219, 377);
+            this.Chk_list.Name = "Chk_list";
+            this.Chk_list.Size = new System.Drawing.Size(333, 96);
+            this.Chk_list.TabIndex = 16;
+            // 
+            // Yes
+            // 
+            this.Yes.AutoSize = true;
+            this.Yes.Location = new System.Drawing.Point(27, 35);
+            this.Yes.Name = "Yes";
+            this.Yes.Size = new System.Drawing.Size(58, 24);
+            this.Yes.TabIndex = 17;
+            this.Yes.TabStop = true;
+            this.Yes.Text = "Yes";
+            this.Yes.UseVisualStyleBackColor = true;
+            // 
+            // No
+            // 
+            this.No.AutoSize = true;
+            this.No.Location = new System.Drawing.Point(201, 34);
+            this.No.Name = "No";
+            this.No.Size = new System.Drawing.Size(51, 24);
+            this.No.TabIndex = 18;
+            this.No.TabStop = true;
+            this.No.Text = "No";
+            this.No.UseVisualStyleBackColor = true;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.Yes);
+            this.groupBox1.Controls.Add(this.No);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(551, 251);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(314, 84);
+            this.groupBox1.TabIndex = 19;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Availability";
+            // 
+            // DisplayUserName
+            // 
+            this.DisplayUserName.AutoSize = true;
+            this.DisplayUserName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DisplayUserName.Location = new System.Drawing.Point(12, 9);
+            this.DisplayUserName.Name = "DisplayUserName";
+            this.DisplayUserName.Size = new System.Drawing.Size(84, 20);
+            this.DisplayUserName.TabIndex = 22;
+            this.DisplayUserName.Text = "Welcome ";
+            // 
+            // Additional_Service
+            // 
+            this.Additional_Service.AutoSize = true;
+            this.Additional_Service.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Additional_Service.Location = new System.Drawing.Point(215, 352);
+            this.Additional_Service.Name = "Additional_Service";
+            this.Additional_Service.Size = new System.Drawing.Size(154, 22);
+            this.Additional_Service.TabIndex = 23;
+            this.Additional_Service.Text = "Additional Service";
+            // 
+            // IsComplete
+            // 
+            this.IsComplete.AutoSize = true;
+            this.IsComplete.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.IsComplete.Location = new System.Drawing.Point(644, 387);
+            this.IsComplete.Name = "IsComplete";
+            this.IsComplete.Size = new System.Drawing.Size(159, 24);
+            this.IsComplete.TabIndex = 24;
+            this.IsComplete.Text = "Order Completed";
+            this.IsComplete.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(881, 680);
+            this.ClientSize = new System.Drawing.Size(1055, 801);
+            this.Controls.Add(this.IsComplete);
+            this.Controls.Add(this.Additional_Service);
+            this.Controls.Add(this.DisplayUserName);
+            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.Chk_list);
             this.Controls.Add(this.DGV);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnAdd);
@@ -217,6 +308,8 @@
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.DGV)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorPro1)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -240,6 +333,13 @@
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.DataGridView DGV;
         private System.Windows.Forms.ErrorProvider errorPro1;
+        private System.Windows.Forms.CheckedListBox Chk_list;
+        private System.Windows.Forms.RadioButton No;
+        private System.Windows.Forms.RadioButton Yes;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label DisplayUserName;
+        private System.Windows.Forms.Label Additional_Service;
+        private System.Windows.Forms.CheckBox IsComplete;
     }
 }
 

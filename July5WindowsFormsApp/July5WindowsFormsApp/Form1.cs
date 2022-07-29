@@ -14,9 +14,11 @@ namespace July5WindowsFormsApp
 {
     public partial class Form1 : Form
     {
-        public Form1()
+        public Form1(string name)
         {
             InitializeComponent();
+            DisplayUserName.Text = DisplayUserName.Text + name;
+
         }
         private void btnAdd_Click(object sender, EventArgs e)
         {
@@ -57,7 +59,10 @@ namespace July5WindowsFormsApp
                         Inv_Num = int.Parse(tbInvNum.Text),
                         Obj_name = tbObjName.Text,
                         Count = int.Parse(tbCount.Text),
-                        Price = double.Parse(tbPrice.Text)
+                        Price = double.Parse(tbPrice.Text),
+                        IsAvail = Yes.Checked,
+                        IsNotAvail = No.Checked,
+                        OrdCom = IsComplete.Checked
                     };
                     p.save();
                     DGV.DataSource = null;
@@ -67,6 +72,19 @@ namespace July5WindowsFormsApp
                 {
                     MessageBox.Show("Type mismatch");
                 };
+                string message = "";
+                foreach (var item in Chk_list.CheckedItems)
+                {
+                    message = message + item.ToString() + " ";
+                }
+                if (message == "")
+                {
+                    MessageBox.Show("User has chosen to not get any additional service");
+                }
+                else
+                {
+                    MessageBox.Show("User has chosen to get " + message);
+                }
             }        
         }
         private void btnCancel_Click(object sender, EventArgs e)

@@ -16,6 +16,9 @@ namespace July5WindowsFormsApp.Model
         public string Obj_name { get; set; }
         public int Count { get; set; }
         public double Price { get; set; }
+        public bool IsAvail { get; set; }
+        public bool IsNotAvail { get; set; }
+        public bool OrdCom { get; set; }
         public void save()
         {
             l.Add(this);
