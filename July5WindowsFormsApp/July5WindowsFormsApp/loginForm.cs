@@ -19,8 +19,7 @@ namespace July5WindowsFormsApp
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string username = tbName.Text;
-            Form1 screen = new Form1(username);
+            MainWindows screen = new MainWindows();
             screen.Show();
             this.Hide();
         }

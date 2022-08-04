@@ -14,10 +14,10 @@ namespace July5WindowsFormsApp
 {
     public partial class Form1 : Form
     {
-        public Form1(string name)
+        public Form1()
         {
             InitializeComponent();
-            DisplayUserName.Text = DisplayUserName.Text + name;
+            //DisplayUserName.Text = DisplayUserName.Text + name;
 
         }
         private void btnAdd_Click(object sender, EventArgs e)

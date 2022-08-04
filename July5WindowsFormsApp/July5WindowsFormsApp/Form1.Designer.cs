@@ -304,7 +304,9 @@
             this.Controls.Add(this.lblinvnum);
             this.Controls.Add(this.lbldate);
             this.Controls.Add(this.lblNum);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.DGV)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorPro1)).EndInit();

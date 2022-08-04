@@ -27,5 +27,10 @@ namespace July5WindowsFormsApp.Model
         {
             return l;
         }
+        public static Project findOne(string name)
+        {
+            return l.Find(l => l.Obj_name == name);
+        }
+        
     }
 }
