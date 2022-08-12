@@ -27,7 +27,7 @@ namespace July5WindowsFormsApp
             }
             else
             {
-                Project.findOne(pro.Obj_name);
+                //Project.findOne(pro.Obj_name);
                 MessageBox.Show("Found");
             }
         }

@@ -17,7 +17,6 @@ namespace July5WindowsFormsApp
         public Form1()
         {
             InitializeComponent();
-            //DisplayUserName.Text = DisplayUserName.Text + name;
 
         }
         private void btnAdd_Click(object sender, EventArgs e)

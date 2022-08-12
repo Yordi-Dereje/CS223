@@ -1,6 +1,6 @@
 ﻿namespace July5WindowsFormsApp
 {
-    partial class Search
+    partial class DisplayList
     {
         /// <summary>
         /// Required designer variable.
@@ -28,46 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.tbSearch = new System.Windows.Forms.TextBox();
-            this.btnSearch = new System.Windows.Forms.Button();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.SuspendLayout();
             // 
-            // tbSearch
+            // flowLayoutPanel1
             // 
-            this.tbSearch.Location = new System.Drawing.Point(31, 29);
-            this.tbSearch.Name = "tbSearch";
-            this.tbSearch.Size = new System.Drawing.Size(288, 22);
-            this.tbSearch.TabIndex = 0;
+            this.flowLayoutPanel1.AutoScroll = true;
+            this.flowLayoutPanel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(12, 38);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(536, 323);
+            this.flowLayoutPanel1.TabIndex = 0;
             // 
-            // btnSearch
-            // 
-            this.btnSearch.Location = new System.Drawing.Point(335, 27);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(113, 23);
-            this.btnSearch.TabIndex = 1;
-            this.btnSearch.Text = "Search";
-            this.btnSearch.UseVisualStyleBackColor = true;
-            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
-            // 
-            // Search
+            // DisplayList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(476, 82);
-            this.Controls.Add(this.btnSearch);
-            this.Controls.Add(this.tbSearch);
+            this.ClientSize = new System.Drawing.Size(560, 403);
+            this.Controls.Add(this.flowLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Search";
+            this.Name = "DisplayList";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Search";
+            this.Text = "DisplayList";
+            this.Load += new System.EventHandler(this.DisplayList_Load);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.TextBox tbSearch;
-        private System.Windows.Forms.Button btnSearch;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
     }
 }

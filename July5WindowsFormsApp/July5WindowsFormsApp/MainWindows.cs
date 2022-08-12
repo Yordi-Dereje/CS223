@@ -37,6 +37,15 @@ namespace July5WindowsFormsApp
             s.Show();
         }
 
-        
+        private void displayToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if(ActiveMdiChild != null)
+            {
+                ActiveMdiChild.Close();
+            }
+            DisplayList dl = new DisplayList();
+            dl.MdiParent = this;
+            dl.Show();
+        }
     }
 }

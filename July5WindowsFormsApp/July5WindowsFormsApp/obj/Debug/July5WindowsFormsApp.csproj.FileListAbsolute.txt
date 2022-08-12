@@ -24,3 +24,6 @@ C:\Users\USER\Desktop\Cs223\July5WindowsFormsApp\July5WindowsFormsApp\obj\Debug\
 C:\Users\USER\Desktop\Cs223\July5WindowsFormsApp\July5WindowsFormsApp\obj\Debug\July5WindowsFormsApp.csproj.CoreCompileInputs.cache
 C:\Users\USER\Desktop\Cs223\July5WindowsFormsApp\July5WindowsFormsApp\obj\Debug\July5WindowsFormsApp.exe
 C:\Users\USER\Desktop\Cs223\July5WindowsFormsApp\July5WindowsFormsApp\obj\Debug\July5WindowsFormsApp.pdb
+C:\Users\USER\Desktop\Cs223\July5WindowsFormsApp\July5WindowsFormsApp\obj\Debug\July5WindowsFormsApp.UsingPanel.resources
+C:\Users\USER\Desktop\Cs223\July5WindowsFormsApp\July5WindowsFormsApp\obj\Debug\July5WindowsFormsApp.ProductCard.resources
+C:\Users\USER\Desktop\Cs223\July5WindowsFormsApp\July5WindowsFormsApp\obj\Debug\July5WindowsFormsApp.DisplayList.resources

@@ -32,6 +32,7 @@
             this.productToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.searchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.displayToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -50,7 +51,8 @@
             // 
             this.productToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.addToolStripMenuItem,
-            this.searchToolStripMenuItem});
+            this.searchToolStripMenuItem,
+            this.displayToolStripMenuItem});
             this.productToolStripMenuItem.Name = "productToolStripMenuItem";
             this.productToolStripMenuItem.Size = new System.Drawing.Size(74, 24);
             this.productToolStripMenuItem.Text = "Product";
@@ -68,6 +70,13 @@
             this.searchToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.searchToolStripMenuItem.Text = "Search";
             this.searchToolStripMenuItem.Click += new System.EventHandler(this.searchToolStripMenuItem_Click);
+            // 
+            // displayToolStripMenuItem
+            // 
+            this.displayToolStripMenuItem.Name = "displayToolStripMenuItem";
+            this.displayToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.displayToolStripMenuItem.Text = "Display";
+            this.displayToolStripMenuItem.Click += new System.EventHandler(this.displayToolStripMenuItem_Click);
             // 
             // MainWindows
             // 
@@ -92,5 +101,6 @@
         private System.Windows.Forms.ToolStripMenuItem productToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem addToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem searchToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem displayToolStripMenuItem;
     }
 }
