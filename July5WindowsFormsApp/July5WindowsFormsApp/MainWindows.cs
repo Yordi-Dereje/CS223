@@ -47,5 +47,10 @@ namespace July5WindowsFormsApp
             dl.MdiParent = this;
             dl.Show();
         }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            System.Environment.Exit(0);
+        }
     }
 }

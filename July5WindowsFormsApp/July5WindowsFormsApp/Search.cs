@@ -27,7 +27,14 @@ namespace July5WindowsFormsApp
             }
             else
             {
-                MessageBox.Show("Found");
+                MessageBox.Show("Num: " + pro.Number +
+                    "\nDate: " + pro.Date +
+                    "\nInv num: " + pro.Inv_Num +
+                    "\nObj name: " + pro.Obj_name +
+                    "\nCount: " + pro.Count +
+                    "\nPrice: " + pro.Price
+                    );
+
             }
         }
     }

@@ -55,7 +55,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkGray;
-            this.ClientSize = new System.Drawing.Size(487, 70);
+            this.ClientSize = new System.Drawing.Size(475, 80);
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.tbSearch);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
