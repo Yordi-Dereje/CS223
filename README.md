@@ -27,3 +27,7 @@
 * Flow layout panel
 * User control form (product card)
 * Display panel
+
+## Sixth week add ons
+* Table layout panel
+* Detail Page
