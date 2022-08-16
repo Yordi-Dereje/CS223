@@ -22,3 +22,8 @@
 * Menu Strip
 * MainWindows Panel: MDI(multiple document interface)
 * Search Panel
+
+## Fifth week add ons
+* Flow layout panel
+* User control form (product card)
+* Display panel
