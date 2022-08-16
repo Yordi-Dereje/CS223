@@ -30,6 +30,11 @@ namespace July5WindowsFormsApp
                 pc.MyObjName = item.Obj_name;
                 pc.MyCount = item.Count;
                 pc.MyPrice = item.Price;
+                pc.Click += (Object o, EventArgs e2) =>
+                {
+                    DetailPage d = new DetailPage(item.Number, item.Date, item.Inv_Num, item.Obj_name, item.Count, item.Price);
+                    d.Show();
+                };
                 flowLayoutPanel1.Controls.Add(pc);
             }
         }

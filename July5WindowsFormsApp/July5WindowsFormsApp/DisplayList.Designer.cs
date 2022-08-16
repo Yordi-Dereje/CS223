@@ -34,18 +34,20 @@
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.AutoScroll = true;
-            this.flowLayoutPanel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(12, 38);
+            this.flowLayoutPanel1.BackColor = System.Drawing.Color.DarkGray;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, -1);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(536, 323);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(706, 335);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
             // DisplayList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(560, 403);
+            this.BackColor = System.Drawing.Color.DarkGray;
+            this.ClientSize = new System.Drawing.Size(705, 336);
             this.Controls.Add(this.flowLayoutPanel1);
+            this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "DisplayList";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

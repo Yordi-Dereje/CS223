@@ -34,16 +34,17 @@
             // 
             // tbSearch
             // 
-            this.tbSearch.Location = new System.Drawing.Point(31, 29);
+            this.tbSearch.Location = new System.Drawing.Point(26, 24);
             this.tbSearch.Name = "tbSearch";
             this.tbSearch.Size = new System.Drawing.Size(288, 22);
             this.tbSearch.TabIndex = 0;
             // 
             // btnSearch
             // 
-            this.btnSearch.Location = new System.Drawing.Point(335, 27);
+            this.btnSearch.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearch.Location = new System.Drawing.Point(330, 22);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(113, 23);
+            this.btnSearch.Size = new System.Drawing.Size(129, 24);
             this.btnSearch.TabIndex = 1;
             this.btnSearch.Text = "Search";
             this.btnSearch.UseVisualStyleBackColor = true;
@@ -53,7 +54,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(476, 82);
+            this.BackColor = System.Drawing.Color.DarkGray;
+            this.ClientSize = new System.Drawing.Size(487, 70);
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.tbSearch);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

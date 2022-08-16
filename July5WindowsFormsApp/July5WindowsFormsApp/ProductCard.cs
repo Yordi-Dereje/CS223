@@ -63,5 +63,10 @@ namespace July5WindowsFormsApp
         {
             InitializeComponent();
         }
+
+        private void ProductCard_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

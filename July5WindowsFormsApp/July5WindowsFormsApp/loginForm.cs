@@ -16,7 +16,6 @@ namespace July5WindowsFormsApp
         {
             InitializeComponent();
         }
-
         private void button1_Click(object sender, EventArgs e)
         {
             MainWindows screen = new MainWindows();
