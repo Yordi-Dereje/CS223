@@ -90,5 +90,11 @@ namespace July5WindowsFormsApp
         {
             System.Environment.Exit(0);
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            DGV.DataSource = null;
+            DGV.DataSource = Project.GetAllProducts();
+        }
     }
 }

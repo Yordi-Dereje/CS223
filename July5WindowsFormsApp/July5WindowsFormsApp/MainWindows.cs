@@ -16,7 +16,8 @@ namespace July5WindowsFormsApp
         {
             InitializeComponent();
         }
-        private void addToolStripMenuItem_Click(object sender, EventArgs e)
+
+        private void addToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             if (ActiveMdiChild != null)
             {
@@ -26,7 +27,8 @@ namespace July5WindowsFormsApp
             f.MdiParent = this;
             f.Show();
         }
-        private void searchToolStripMenuItem_Click(object sender, EventArgs e)
+
+        private void searchToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             if (ActiveMdiChild != null)
             {
@@ -37,9 +39,9 @@ namespace July5WindowsFormsApp
             s.Show();
         }
 
-        private void displayToolStripMenuItem_Click(object sender, EventArgs e)
+        private void displayToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            if(ActiveMdiChild != null)
+            if (ActiveMdiChild != null)
             {
                 ActiveMdiChild.Close();
             }
@@ -48,7 +50,7 @@ namespace July5WindowsFormsApp
             dl.Show();
         }
 
-        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        private void exitToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             System.Environment.Exit(0);
         }
