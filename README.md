@@ -35,4 +35,4 @@
 ## Seventh week add ons
 * Establishing sql connection
 * ExecuteReader for retrieval and search
-* ExecuteNonQuery for insertion
+* ExecuteNonQuery for insert, update and delete commands
