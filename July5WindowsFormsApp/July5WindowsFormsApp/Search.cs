@@ -24,6 +24,10 @@ namespace July5WindowsFormsApp
             var pro = Project.findOne(tbSearch.Text);
             if (pro == null)
             {
+                if(panel1.Visible == true)
+                {
+                    panel1.Visible = false;
+                }    
                 MessageBox.Show("Not Found!");
             }
             else
@@ -49,6 +53,8 @@ namespace July5WindowsFormsApp
                 MySqlCommand cmd = new MySqlCommand(query, con);
                 var result = cmd.ExecuteNonQuery();
                 MessageBox.Show("Update successful");
+                panel1.Visible = false;
+                tbSearch.Text = "";
                 con.Close();
             }
             catch (Exception ex)
@@ -68,6 +74,8 @@ namespace July5WindowsFormsApp
                 MySqlCommand cmd = new MySqlCommand(query, con);
                 var result = cmd.ExecuteNonQuery();
                 MessageBox.Show("Delete successful");
+                panel1.Visible = false;
+                tbSearch.Text = "";
                 con.Close();
             }
             catch (Exception ex)
