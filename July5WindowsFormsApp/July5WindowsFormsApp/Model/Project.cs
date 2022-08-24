@@ -11,7 +11,7 @@ namespace July5WindowsFormsApp.Model
     class Project
     {
         static private List<Project> l = new List<Project>();
-        static private List<Project> temp = new List<Project>();
+        static private List<Project> tempS = new List<Project>();
         public int Number { get; set; }
         public string Date { get; set; }
         public int Inv_Num { get; set; }
@@ -41,8 +41,10 @@ namespace July5WindowsFormsApp.Model
         }
         static public List<Project> GetAllProducts()
         {
+            List<Project> temp = new List<Project>();
             try
             {
+                
                 string pathString = "server = localhost; database = csharpdb; uid = root; pwd = root;";
                 MySqlConnection con = new MySqlConnection(pathString);
                 con.Open();
@@ -71,6 +73,7 @@ namespace July5WindowsFormsApp.Model
         }
         public static Project findOne(string name)
         {
+            //List<Project> temp = new List<Project>();
             try
             {
                 string pathString = "server = localhost; database = csharpdb; uid = root; pwd = root;";
@@ -89,7 +92,7 @@ namespace July5WindowsFormsApp.Model
                     p.Obj_name = (string)sdr["Object_Name"];
                     p.Count = (int)sdr["Count"];
                     p.Price = (double)sdr["Price"];
-                    temp.Add(p);
+                    tempS.Add(p);
                 }
                 con.Close();
             }
@@ -97,7 +100,7 @@ namespace July5WindowsFormsApp.Model
             {
                 MessageBox.Show(ex.Message);
             }
-            return temp.Find(temp => temp.Obj_name == name);
+            return tempS.Find(tempS => tempS.Obj_name == name);
         }
         
     }

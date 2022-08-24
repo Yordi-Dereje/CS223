@@ -17,7 +17,8 @@ namespace July5WindowsFormsApp
         public Form1()
         {
             InitializeComponent();
-
+            DGV.DataSource = null;
+            DGV.DataSource = Project.GetAllProducts();
         }
         private void btnAdd_Click(object sender, EventArgs e)
         {
@@ -84,17 +85,16 @@ namespace July5WindowsFormsApp
                 {
                     MessageBox.Show("User has chosen to get " + message);
                 }
-            }        
+                tbNum.Text = "";
+                tbInvNum.Text = "";
+                tbObjName.Text = "";
+                tbCount.Text = "";
+                tbPrice.Text = "";
+            }       
         }
         private void btnCancel_Click(object sender, EventArgs e)
         {
             System.Environment.Exit(0);
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            DGV.DataSource = null;
-            DGV.DataSource = Project.GetAllProducts();
         }
     }
 }
