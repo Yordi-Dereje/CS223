@@ -31,3 +31,8 @@
 ## Sixth week add ons
 * Table layout panel
 * Detail Page
+
+## Seventh week add ons
+* Establishing sql connection
+* ExecuteReader for retrieval and search
+* ExecuteNonQuery for insertion
