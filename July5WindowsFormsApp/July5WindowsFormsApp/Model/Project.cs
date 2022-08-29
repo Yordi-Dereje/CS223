@@ -29,7 +29,10 @@ namespace July5WindowsFormsApp.Model
                 string pathString = "server = localhost; database = csharpdb; uid = root; pwd = root;";
                 MySqlConnection con = new MySqlConnection(pathString);
                 con.Open();
-                string query = "insert into ProjectTable values('" + this.Number + "', '" + this.Date + "', '" + this.Inv_Num + "', '" + this.Obj_name + "', '" + this.Count + "', '" + this.Price + "')";
+                string query = "insert into ProjectTable values('" + this.Number + "', '" + this.Date + "', " +
+                    "'" + this.Inv_Num + "', '" + this.Obj_name + 
+                    "', '" + this.Count + "', '" + this.Price + 
+                    "', '" + this.IsAvail + "', '" + this.OrdCom + "')";
                 MySqlCommand cmd = new MySqlCommand(query, con);
                 var result = cmd.ExecuteNonQuery();
                 con.Close();
@@ -61,6 +64,9 @@ namespace July5WindowsFormsApp.Model
                     p.Obj_name = (string)sdr["Object_Name"];
                     p.Count = (int)sdr["Count"];
                     p.Price = (double)sdr["Price"];
+                    p.IsAvail = Convert.ToBoolean(sdr["Availability"]);
+                    p.IsNotAvail = !(Convert.ToBoolean(sdr["Availability"]));
+                    p.OrdCom = Convert.ToBoolean(sdr["OrderComplete"]);
                     temp.Add(p);
                 }
                 con.Close();
@@ -73,7 +79,6 @@ namespace July5WindowsFormsApp.Model
         }
         public static Project findOne(string name)
         {
-            //List<Project> temp = new List<Project>();
             try
             {
                 string pathString = "server = localhost; database = csharpdb; uid = root; pwd = root;";
@@ -92,6 +97,9 @@ namespace July5WindowsFormsApp.Model
                     p.Obj_name = (string)sdr["Object_Name"];
                     p.Count = (int)sdr["Count"];
                     p.Price = (double)sdr["Price"];
+                    p.IsAvail = Convert.ToBoolean(sdr["Availability"]);
+                    p.IsNotAvail = !(Convert.ToBoolean(sdr["Availability"]));
+                    p.OrdCom = Convert.ToBoolean(sdr["OrderComplete"]);
                     tempS.Add(p);
                 }
                 con.Close();

@@ -45,6 +45,10 @@
             this.lblinvnum = new System.Windows.Forms.Label();
             this.lbldate = new System.Windows.Forms.Label();
             this.lblNum = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.tbComp = new System.Windows.Forms.TextBox();
+            this.tbAvail = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -68,6 +72,10 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.tbComp);
+            this.panel1.Controls.Add(this.tbAvail);
             this.panel1.Controls.Add(this.btnDelete);
             this.panel1.Controls.Add(this.btnUpdate);
             this.panel1.Controls.Add(this.label1);
@@ -84,14 +92,14 @@
             this.panel1.Controls.Add(this.lblNum);
             this.panel1.Location = new System.Drawing.Point(90, 73);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(567, 438);
+            this.panel1.Size = new System.Drawing.Size(567, 489);
             this.panel1.TabIndex = 5;
             this.panel1.Visible = false;
             // 
             // btnDelete
             // 
             this.btnDelete.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDelete.Location = new System.Drawing.Point(309, 366);
+            this.btnDelete.Location = new System.Drawing.Point(291, 415);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(114, 39);
             this.btnDelete.TabIndex = 53;
@@ -102,7 +110,7 @@
             // btnUpdate
             // 
             this.btnUpdate.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdate.Location = new System.Drawing.Point(124, 366);
+            this.btnUpdate.Location = new System.Drawing.Point(106, 415);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(114, 39);
             this.btnUpdate.TabIndex = 52;
@@ -114,7 +122,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(224, 33);
+            this.label1.Location = new System.Drawing.Point(220, 16);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(0, 22);
             this.label1.TabIndex = 51;
@@ -123,7 +131,7 @@
             // 
             this.lblPrice.AutoSize = true;
             this.lblPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPrice.Location = new System.Drawing.Point(121, 303);
+            this.lblPrice.Location = new System.Drawing.Point(45, 304);
             this.lblPrice.Name = "lblPrice";
             this.lblPrice.Size = new System.Drawing.Size(51, 22);
             this.lblPrice.TabIndex = 50;
@@ -133,7 +141,7 @@
             // 
             this.lblCount.AutoSize = true;
             this.lblCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCount.Location = new System.Drawing.Point(114, 252);
+            this.lblCount.Location = new System.Drawing.Point(38, 253);
             this.lblCount.Name = "lblCount";
             this.lblCount.Size = new System.Drawing.Size(58, 22);
             this.lblCount.TabIndex = 49;
@@ -142,7 +150,7 @@
             // tbPrice
             // 
             this.tbPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbPrice.Location = new System.Drawing.Point(228, 297);
+            this.tbPrice.Location = new System.Drawing.Point(152, 298);
             this.tbPrice.Name = "tbPrice";
             this.tbPrice.Size = new System.Drawing.Size(100, 28);
             this.tbPrice.TabIndex = 48;
@@ -150,7 +158,7 @@
             // tbCount
             // 
             this.tbCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbCount.Location = new System.Drawing.Point(228, 246);
+            this.tbCount.Location = new System.Drawing.Point(152, 247);
             this.tbCount.Name = "tbCount";
             this.tbCount.Size = new System.Drawing.Size(100, 28);
             this.tbCount.TabIndex = 47;
@@ -158,7 +166,7 @@
             // tbObjName
             // 
             this.tbObjName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbObjName.Location = new System.Drawing.Point(228, 191);
+            this.tbObjName.Location = new System.Drawing.Point(224, 174);
             this.tbObjName.Name = "tbObjName";
             this.tbObjName.Size = new System.Drawing.Size(270, 28);
             this.tbObjName.TabIndex = 46;
@@ -167,7 +175,7 @@
             // 
             this.lblObjName.AutoSize = true;
             this.lblObjName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblObjName.Location = new System.Drawing.Point(58, 197);
+            this.lblObjName.Location = new System.Drawing.Point(54, 180);
             this.lblObjName.Name = "lblObjName";
             this.lblObjName.Size = new System.Drawing.Size(114, 22);
             this.lblObjName.TabIndex = 45;
@@ -176,7 +184,7 @@
             // dpt
             // 
             this.dpt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dpt.Location = new System.Drawing.Point(228, 81);
+            this.dpt.Location = new System.Drawing.Point(224, 64);
             this.dpt.Name = "dpt";
             this.dpt.Size = new System.Drawing.Size(314, 28);
             this.dpt.TabIndex = 44;
@@ -184,7 +192,7 @@
             // tbInvNum
             // 
             this.tbInvNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbInvNum.Location = new System.Drawing.Point(228, 139);
+            this.tbInvNum.Location = new System.Drawing.Point(224, 122);
             this.tbInvNum.Name = "tbInvNum";
             this.tbInvNum.Size = new System.Drawing.Size(315, 28);
             this.tbInvNum.TabIndex = 43;
@@ -193,7 +201,7 @@
             // 
             this.lblinvnum.AutoSize = true;
             this.lblinvnum.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblinvnum.Location = new System.Drawing.Point(21, 142);
+            this.lblinvnum.Location = new System.Drawing.Point(17, 125);
             this.lblinvnum.Name = "lblinvnum";
             this.lblinvnum.Size = new System.Drawing.Size(151, 22);
             this.lblinvnum.TabIndex = 42;
@@ -203,7 +211,7 @@
             // 
             this.lbldate.AutoSize = true;
             this.lbldate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbldate.Location = new System.Drawing.Point(124, 87);
+            this.lbldate.Location = new System.Drawing.Point(120, 70);
             this.lbldate.Name = "lbldate";
             this.lbldate.Size = new System.Drawing.Size(48, 22);
             this.lbldate.TabIndex = 41;
@@ -213,11 +221,47 @@
             // 
             this.lblNum.AutoSize = true;
             this.lblNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNum.Location = new System.Drawing.Point(99, 33);
+            this.lblNum.Location = new System.Drawing.Point(95, 16);
             this.lblNum.Name = "lblNum";
             this.lblNum.Size = new System.Drawing.Size(73, 22);
             this.lblNum.TabIndex = 40;
             this.lblNum.Text = "Number";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(289, 298);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(96, 22);
+            this.label2.TabIndex = 57;
+            this.label2.Text = "Completed";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(290, 247);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(95, 22);
+            this.label3.TabIndex = 56;
+            this.label3.Text = "Availability";
+            // 
+            // tbComp
+            // 
+            this.tbComp.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbComp.Location = new System.Drawing.Point(404, 292);
+            this.tbComp.Name = "tbComp";
+            this.tbComp.Size = new System.Drawing.Size(100, 28);
+            this.tbComp.TabIndex = 55;
+            // 
+            // tbAvail
+            // 
+            this.tbAvail.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbAvail.Location = new System.Drawing.Point(404, 241);
+            this.tbAvail.Name = "tbAvail";
+            this.tbAvail.Size = new System.Drawing.Size(100, 28);
+            this.tbAvail.TabIndex = 54;
             // 
             // Search
             // 
@@ -259,5 +303,9 @@
         private System.Windows.Forms.Label lblinvnum;
         private System.Windows.Forms.Label lbldate;
         private System.Windows.Forms.Label lblNum;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox tbComp;
+        private System.Windows.Forms.TextBox tbAvail;
     }
 }

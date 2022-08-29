@@ -12,15 +12,17 @@ namespace July5WindowsFormsApp
 {
     public partial class DetailPage : Form
     {
-        public DetailPage(int num, string date, int invnum, string objname, int count, double price)
+        public DetailPage(int num, string date, int invnum, string objname, int count, double price, bool avail, bool comp)
         {
             InitializeComponent();
-            label1.Text = "Num: " + num.ToString();
-            label2.Text = "Date: " + date;
-            label3.Text = "Inv num: " + invnum.ToString();
-            label4.Text = "Obj name: " + objname;
-            label5.Text = "Count: " + count.ToString();
-            label6.Text = "Price: " + price.ToString();
+            label9.Text = num.ToString();
+            label10.Text = date;
+            label11.Text = invnum.ToString();
+            label12.Text = objname;
+            label13.Text = count.ToString();
+            label14.Text = price.ToString();
+            label15.Text = avail.ToString();
+            label16.Text = comp.ToString();
         }
     }
 }

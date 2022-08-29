@@ -77,11 +77,7 @@ namespace July5WindowsFormsApp
                 {
                     message = message + item.ToString() + " ";
                 }
-                if (message == "")
-                {
-                    MessageBox.Show("User has chosen to not get any additional service");
-                }
-                else
+                if (message != "")
                 {
                     MessageBox.Show("User has chosen to get " + message);
                 }
@@ -90,6 +86,9 @@ namespace July5WindowsFormsApp
                 tbObjName.Text = "";
                 tbCount.Text = "";
                 tbPrice.Text = "";
+                Yes.Checked = false;
+                No.Checked = false;
+                IsComplete.Checked = false;
             }       
         }
         private void btnCancel_Click(object sender, EventArgs e)

@@ -58,6 +58,20 @@ namespace July5WindowsFormsApp
             get { return _MyPrice; }
             set { _MyPrice = value; label6.Text = value.ToString(); }
         }
+        private bool _MyAvail;
+
+        public bool MyAvail
+        {
+            get { return _MyAvail; }
+            set { _MyAvail = value; label16.Text = value.ToString(); }
+        }
+        private bool _MyComplete;
+
+        public bool MyComplete
+        {
+            get { return _MyComplete; }
+            set { _MyComplete = value; label15.Text = value.ToString(); }
+        }
 
         public ProductCard()
         {
