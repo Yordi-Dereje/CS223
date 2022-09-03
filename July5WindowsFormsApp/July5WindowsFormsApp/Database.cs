@@ -27,11 +27,16 @@ namespace July5WindowsFormsApp
 
         public void Insert(Product p)
         {
-            string query = "insert into ProjectTable values('" + p.Number + "', '" + p.Date + "', " +
-                                "'" + p.Inv_Num + "', '" + p.Obj_name +
-                                "', '" + p.Count + "', '" + p.Price +
-                                "', '" + p.IsAvail + "', '" + p.OrdCom + "')";
+            string query = "Call InsertProc(@num, @date, @inv, @obj, @count, @price, @avail, @comp);";
             MySqlCommand cmd = new MySqlCommand(query, con);
+            cmd.Parameters.AddWithValue("@num", p.Number);
+            cmd.Parameters.AddWithValue("@date", p.Date);
+            cmd.Parameters.AddWithValue("@inv", p.Inv_Num);
+            cmd.Parameters.AddWithValue("@obj", p.Obj_name);
+            cmd.Parameters.AddWithValue("@count", p.Count);
+            cmd.Parameters.AddWithValue("@price", p.Price);
+            cmd.Parameters.AddWithValue("@avail", MySqlDbType.Bit).Value = p.IsAvail;
+            cmd.Parameters.AddWithValue("@comp", MySqlDbType.Bit).Value = p.OrdCom;
             try
             {
                 con.Open();
@@ -47,14 +52,18 @@ namespace July5WindowsFormsApp
                 con.Close();
             };
         }
-        public void Update(string date, string inv, string obj, string count, string price,string avail, string comp, string num)
+        public void Update(string date, string inv, string obj, string count, string price,bool avail, bool comp, string num)
         {
-            string query = "update ProjectTable " +
-                    "set Date='" + date + "',Inventory_Number='" + inv
-                    + "',Object_Name='" + obj + "',Count='" + count
-                    + "',Price='" + price + "',Availability='" + avail
-                    + "',OrderComplete='" + comp + "' where Number = '" + num + "';";
+            string query = "call updateProc(@date, @inv, @obj, @count, @price, @avail, @comp, @num);";
             MySqlCommand cmd = new MySqlCommand(query, con);
+            cmd.Parameters.AddWithValue("@date", date);
+            cmd.Parameters.AddWithValue("@inv", inv);
+            cmd.Parameters.AddWithValue("@obj", obj);
+            cmd.Parameters.AddWithValue("@count", count);
+            cmd.Parameters.AddWithValue("@price", price);
+            cmd.Parameters.AddWithValue("@avail", MySqlDbType.Bit).Value = avail;
+            cmd.Parameters.AddWithValue("@comp", MySqlDbType.Bit).Value = comp;
+            cmd.Parameters.AddWithValue("@num", num);
             try
             {
                 con.Open();
@@ -73,8 +82,9 @@ namespace July5WindowsFormsApp
 
         public void Delete(string num)
         {
-            string query = "delete from ProjectTable where Number = '" + num + "';";
+            string query = "call deleteProc(@num)";
             MySqlCommand cmd = new MySqlCommand(query, con);
+            cmd.Parameters.AddWithValue("@num", num);
             try
             {
                 con.Open();

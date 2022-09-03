@@ -47,7 +47,13 @@ namespace July5WindowsFormsApp
         private void btnUpdate_Click(object sender, EventArgs e)
         {
             Database d = new Database();
-            d.Update(dpt.Text, tbInvNum.Text, tbObjName.Text, tbCount.Text, tbPrice.Text, tbAvail.Text, tbComp.Text, label1.Text);
+            bool avBool = false;
+            bool ocBool = false;
+            if (tbAvail.Text.Equals("True") || tbAvail.Text.Equals("true"))
+                avBool = true;
+            if (tbComp.Text.Equals("True") || tbComp.Text.Equals("true"))
+                ocBool = true;
+            d.Update(dpt.Text, tbInvNum.Text, tbObjName.Text, tbCount.Text, tbPrice.Text, avBool, ocBool, label1.Text);
             panel1.Visible = false;
             tbSearch.Text = "";
         }  
