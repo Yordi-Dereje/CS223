@@ -36,3 +36,7 @@
 * Establishing sql connection
 * ExecuteReader for retrieval and search
 * ExecuteNonQuery for insert, update and delete commands
+
+## Eighth week add ons
+* Secure Insert, Update and Delete
+* Use of stored procedure
