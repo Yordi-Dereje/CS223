@@ -12,13 +12,13 @@ using System.Text.RegularExpressions;
 
 namespace July5WindowsFormsApp
 {
-    public partial class Form1 : Form
+    public partial class Input : Form
     {
-        public Form1()
+        public Input()
         {
             InitializeComponent();
             DGV.DataSource = null;
-            DGV.DataSource = Project.GetAllProducts();
+            DGV.DataSource = Product.GetAllProducts();
         }
         private void btnAdd_Click(object sender, EventArgs e)
         {
@@ -52,7 +52,7 @@ namespace July5WindowsFormsApp
             {
                 try
                 {
-                    Project p = new Project
+                    Product p = new Product
                     {
                         Number = int.Parse(tbNum.Text),
                         Date = dateTimePicker1.Text,
@@ -66,7 +66,7 @@ namespace July5WindowsFormsApp
                     };
                     p.save();
                     DGV.DataSource = null;
-                    DGV.DataSource = Project.GetAllProducts();
+                    DGV.DataSource = Product.GetAllProducts();
                 }
                 catch (Exception)
                 {

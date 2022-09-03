@@ -16,30 +16,35 @@ namespace July5WindowsFormsApp
         public DisplayList()
         {
             InitializeComponent();
+            Load();
         }
-
-        private void DisplayList_Load(object sender, EventArgs e)
+        private void Load()
         {
-            
-            foreach(var item in Project.GetAllProducts())
+            panel1.Controls.Clear();
+            flowLayoutPanel1.Visible = true;
+            flowLayoutPanel1.Controls.Clear();
+            button1.Visible = false;
+            foreach (var item in Product.GetAllProducts())
             {
                 ProductCard pc = new ProductCard();
-                pc.MyNum = item.Number;
-                pc.MyDate = item.Date;
-                pc.MyInvNum = item.Inv_Num;
                 pc.MyObjName = item.Obj_name;
-                pc.MyCount = item.Count;
                 pc.MyPrice = item.Price;
-                pc.MyAvail = item.IsAvail;
-                pc.MyComplete = item.OrdCom;
                 pc.Click += (Object o, EventArgs e2) =>
                 {
-                    DetailPage d = new DetailPage(item.Number, item.Date, item.Inv_Num, item.Obj_name, item.Count, item.Price, item.IsAvail, item.OrdCom);
+                    panel1.Controls.Clear();
+                    DetailPage d = new DetailPage(item.Number, item.Date, item.Inv_Num, item.Obj_name, item.Count, item.Price, item.IsAvail, item.OrdCom) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+                    panel1.Controls.Add(d);
                     d.Show();
+                    button1.Visible = true;
                 };
                 flowLayoutPanel1.Controls.Add(pc);
+                panel1.Controls.Add(flowLayoutPanel1);
             }
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Load();
+        }
     }
 }

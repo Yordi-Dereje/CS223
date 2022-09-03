@@ -39,7 +39,7 @@
             // Submit
             // 
             this.Submit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Submit.Location = new System.Drawing.Point(180, 268);
+            this.Submit.Location = new System.Drawing.Point(185, 197);
             this.Submit.Name = "Submit";
             this.Submit.Size = new System.Drawing.Size(93, 39);
             this.Submit.TabIndex = 0;
@@ -51,7 +51,7 @@
             // 
             this.lblName.AutoSize = true;
             this.lblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblName.Location = new System.Drawing.Point(73, 119);
+            this.lblName.Location = new System.Drawing.Point(78, 74);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(57, 22);
             this.lblName.TabIndex = 1;
@@ -60,7 +60,7 @@
             // tbName
             // 
             this.tbName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbName.Location = new System.Drawing.Point(192, 119);
+            this.tbName.Location = new System.Drawing.Point(197, 74);
             this.tbName.Name = "tbName";
             this.tbName.Size = new System.Drawing.Size(208, 28);
             this.tbName.TabIndex = 2;
@@ -68,7 +68,7 @@
             // tbPassword
             // 
             this.tbPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbPassword.Location = new System.Drawing.Point(192, 184);
+            this.tbPassword.Location = new System.Drawing.Point(197, 139);
             this.tbPassword.Name = "tbPassword";
             this.tbPassword.Size = new System.Drawing.Size(208, 28);
             this.tbPassword.TabIndex = 4;
@@ -77,7 +77,7 @@
             // 
             this.lblPassword.AutoSize = true;
             this.lblPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPassword.Location = new System.Drawing.Point(73, 187);
+            this.lblPassword.Location = new System.Drawing.Point(78, 142);
             this.lblPassword.Name = "lblPassword";
             this.lblPassword.Size = new System.Drawing.Size(89, 22);
             this.lblPassword.TabIndex = 3;
@@ -86,10 +86,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Algerian", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(123, 42);
+            this.label1.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(153, 20);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(221, 38);
+            this.label1.Size = new System.Drawing.Size(152, 35);
             this.label1.TabIndex = 5;
             this.label1.Text = "Admin Login";
             // 
@@ -97,14 +97,15 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.LightCyan;
-            this.ClientSize = new System.Drawing.Size(473, 354);
+            this.BackColor = System.Drawing.Color.LightGray;
+            this.ClientSize = new System.Drawing.Size(473, 268);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.tbPassword);
             this.Controls.Add(this.lblPassword);
             this.Controls.Add(this.tbName);
             this.Controls.Add(this.lblName);
             this.Controls.Add(this.Submit);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "loginForm";
             this.Text = "loginForm";
             this.ResumeLayout(false);

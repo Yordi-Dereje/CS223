@@ -23,7 +23,7 @@ namespace July5WindowsFormsApp
             {
                 ActiveMdiChild.Close();
             }
-            Form1 f = new Form1();
+            Input f = new Input();
             f.MdiParent = this;
             f.Show();
         }

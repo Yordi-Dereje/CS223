@@ -21,7 +21,7 @@ namespace July5WindowsFormsApp
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
-            var pro = Project.findOne(tbSearch.Text);
+            var pro = Product.findOne(tbSearch.Text);
             if (pro == null)
             {
                 if(panel1.Visible == true)
@@ -46,47 +46,18 @@ namespace July5WindowsFormsApp
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            try
-            {
-                string pathString = "server = localhost; database = csharpdb; uid = root; pwd = root;";
-                MySqlConnection con = new MySqlConnection(pathString);
-                con.Open();
-                string query = "update ProjectTable set Date='" + dpt.Text + "',Inventory_Number='" + tbInvNum.Text 
-                    + "',Object_Name='" + tbObjName.Text + "',Count='" + tbCount.Text 
-                    + "',Price='" + tbPrice.Text + "',Availability='" + tbAvail.Text 
-                    + "',OrderComplete='" + tbComp.Text + "' where Number = '" + label1.Text + "';";
-                MySqlCommand cmd = new MySqlCommand(query, con);
-                var result = cmd.ExecuteNonQuery();
-                MessageBox.Show("Update successful");
-                panel1.Visible = false;
-                tbSearch.Text = "";
-                con.Close();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
-
+            Database d = new Database();
+            d.Update(dpt.Text, tbInvNum.Text, tbObjName.Text, tbCount.Text, tbPrice.Text, tbAvail.Text, tbComp.Text, label1.Text);
+            panel1.Visible = false;
+            tbSearch.Text = "";
+        }  
+        
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            try
-            {
-                string pathString = "server = localhost; database = csharpdb; uid = root; pwd = root;";
-                MySqlConnection con = new MySqlConnection(pathString);
-                con.Open();
-                string query = "delete from ProjectTable where Number = '" + label1.Text + "';";
-                MySqlCommand cmd = new MySqlCommand(query, con);
-                var result = cmd.ExecuteNonQuery();
-                MessageBox.Show("Delete successful");
-                panel1.Visible = false;
-                tbSearch.Text = "";
-                con.Close();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
+            Database d = new Database();
+            d.Delete(label1.Text);
+            panel1.Visible = false;
+            tbSearch.Text = "";
         }
     }
 }

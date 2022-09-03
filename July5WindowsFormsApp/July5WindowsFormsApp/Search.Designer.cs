@@ -31,6 +31,10 @@
             this.tbSearch = new System.Windows.Forms.TextBox();
             this.btnSearch = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.tbComp = new System.Windows.Forms.TextBox();
+            this.tbAvail = new System.Windows.Forms.TextBox();
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -45,10 +49,6 @@
             this.lblinvnum = new System.Windows.Forms.Label();
             this.lbldate = new System.Windows.Forms.Label();
             this.lblNum = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.tbComp = new System.Windows.Forms.TextBox();
-            this.tbAvail = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -95,6 +95,42 @@
             this.panel1.Size = new System.Drawing.Size(567, 489);
             this.panel1.TabIndex = 5;
             this.panel1.Visible = false;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(289, 298);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(96, 22);
+            this.label2.TabIndex = 57;
+            this.label2.Text = "Completed";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(290, 247);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(95, 22);
+            this.label3.TabIndex = 56;
+            this.label3.Text = "Availability";
+            // 
+            // tbComp
+            // 
+            this.tbComp.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbComp.Location = new System.Drawing.Point(404, 292);
+            this.tbComp.Name = "tbComp";
+            this.tbComp.Size = new System.Drawing.Size(100, 28);
+            this.tbComp.TabIndex = 55;
+            // 
+            // tbAvail
+            // 
+            this.tbAvail.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbAvail.Location = new System.Drawing.Point(404, 241);
+            this.tbAvail.Name = "tbAvail";
+            this.tbAvail.Size = new System.Drawing.Size(100, 28);
+            this.tbAvail.TabIndex = 54;
             // 
             // btnDelete
             // 
@@ -227,48 +263,12 @@
             this.lblNum.TabIndex = 40;
             this.lblNum.Text = "Number";
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(289, 298);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(96, 22);
-            this.label2.TabIndex = 57;
-            this.label2.Text = "Completed";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(290, 247);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(95, 22);
-            this.label3.TabIndex = 56;
-            this.label3.Text = "Availability";
-            // 
-            // tbComp
-            // 
-            this.tbComp.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbComp.Location = new System.Drawing.Point(404, 292);
-            this.tbComp.Name = "tbComp";
-            this.tbComp.Size = new System.Drawing.Size(100, 28);
-            this.tbComp.TabIndex = 55;
-            // 
-            // tbAvail
-            // 
-            this.tbAvail.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbAvail.Location = new System.Drawing.Point(404, 241);
-            this.tbAvail.Name = "tbAvail";
-            this.tbAvail.Size = new System.Drawing.Size(100, 28);
-            this.tbAvail.TabIndex = 54;
-            // 
             // Search
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DarkGray;
-            this.ClientSize = new System.Drawing.Size(709, 600);
+            this.BackColor = System.Drawing.Color.LightGray;
+            this.ClientSize = new System.Drawing.Size(751, 612);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.tbSearch);

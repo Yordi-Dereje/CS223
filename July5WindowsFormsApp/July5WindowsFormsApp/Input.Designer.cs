@@ -1,6 +1,6 @@
 ﻿namespace July5WindowsFormsApp
 {
-    partial class Form1
+    partial class Input
     {
         /// <summary>
         /// Required designer variable.
@@ -70,7 +70,7 @@
             // 
             this.lbldate.AutoSize = true;
             this.lbldate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbldate.Location = new System.Drawing.Point(369, 9);
+            this.lbldate.Location = new System.Drawing.Point(408, 9);
             this.lbldate.Name = "lbldate";
             this.lbldate.Size = new System.Drawing.Size(48, 22);
             this.lbldate.TabIndex = 1;
@@ -80,7 +80,7 @@
             // 
             this.lblinvnum.AutoSize = true;
             this.lblinvnum.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblinvnum.Location = new System.Drawing.Point(369, 95);
+            this.lblinvnum.Location = new System.Drawing.Point(408, 95);
             this.lblinvnum.Name = "lblinvnum";
             this.lblinvnum.Size = new System.Drawing.Size(151, 22);
             this.lblinvnum.TabIndex = 2;
@@ -97,7 +97,7 @@
             // tbInvNum
             // 
             this.tbInvNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbInvNum.Location = new System.Drawing.Point(372, 120);
+            this.tbInvNum.Location = new System.Drawing.Point(411, 120);
             this.tbInvNum.Name = "tbInvNum";
             this.tbInvNum.Size = new System.Drawing.Size(315, 28);
             this.tbInvNum.TabIndex = 4;
@@ -105,7 +105,7 @@
             // dateTimePicker1
             // 
             this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(373, 34);
+            this.dateTimePicker1.Location = new System.Drawing.Point(412, 34);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(314, 28);
             this.dateTimePicker1.TabIndex = 5;
@@ -167,7 +167,7 @@
             // btnAdd
             // 
             this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdd.Location = new System.Drawing.Point(231, 563);
+            this.btnAdd.Location = new System.Drawing.Point(236, 576);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(74, 35);
             this.btnAdd.TabIndex = 12;
@@ -178,7 +178,7 @@
             // btnCancel
             // 
             this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancel.Location = new System.Drawing.Point(382, 563);
+            this.btnCancel.Location = new System.Drawing.Point(387, 576);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(86, 35);
             this.btnCancel.TabIndex = 13;
@@ -189,11 +189,11 @@
             // DGV
             // 
             this.DGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DGV.Location = new System.Drawing.Point(28, 395);
+            this.DGV.Location = new System.Drawing.Point(26, 380);
             this.DGV.Name = "DGV";
             this.DGV.RowHeadersWidth = 51;
             this.DGV.RowTemplate.Height = 24;
-            this.DGV.Size = new System.Drawing.Size(661, 162);
+            this.DGV.Size = new System.Drawing.Size(699, 190);
             this.DGV.TabIndex = 14;
             // 
             // errorPro1
@@ -240,7 +240,7 @@
             this.groupBox1.Controls.Add(this.Yes);
             this.groupBox1.Controls.Add(this.No);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(372, 278);
+            this.groupBox1.Location = new System.Drawing.Point(411, 278);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(314, 84);
             this.groupBox1.TabIndex = 19;
@@ -261,19 +261,19 @@
             // 
             this.IsComplete.AutoSize = true;
             this.IsComplete.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.IsComplete.Location = new System.Drawing.Point(373, 199);
+            this.IsComplete.Location = new System.Drawing.Point(412, 199);
             this.IsComplete.Name = "IsComplete";
             this.IsComplete.Size = new System.Drawing.Size(159, 24);
             this.IsComplete.TabIndex = 24;
             this.IsComplete.Text = "Order Completed";
             this.IsComplete.UseVisualStyleBackColor = true;
             // 
-            // Form1
+            // Input
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DarkGray;
-            this.ClientSize = new System.Drawing.Size(709, 600);
+            this.BackColor = System.Drawing.Color.LightGray;
+            this.ClientSize = new System.Drawing.Size(751, 612);
             this.Controls.Add(this.IsComplete);
             this.Controls.Add(this.Additional_Service);
             this.Controls.Add(this.groupBox1);
@@ -295,7 +295,7 @@
             this.Controls.Add(this.lblNum);
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Form1";
+            this.Name = "Input";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.DGV)).EndInit();

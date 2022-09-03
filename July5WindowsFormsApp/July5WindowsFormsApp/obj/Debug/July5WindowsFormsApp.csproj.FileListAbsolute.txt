@@ -34,14 +34,12 @@ C:\Users\USER\Desktop\Csharp lab\July5WindowsFormsApp\July5WindowsFormsApp\bin\D
 C:\Users\USER\Desktop\Csharp lab\July5WindowsFormsApp\July5WindowsFormsApp\obj\Debug\July5WindowsFormsApp.csproj.AssemblyReference.cache
 C:\Users\USER\Desktop\Csharp lab\July5WindowsFormsApp\July5WindowsFormsApp\obj\Debug\July5WindowsFormsApp.csproj.SuggestedBindingRedirects.cache
 C:\Users\USER\Desktop\Csharp lab\July5WindowsFormsApp\July5WindowsFormsApp\obj\Debug\July5WindowsFormsApp.DisplayList.resources
-C:\Users\USER\Desktop\Csharp lab\July5WindowsFormsApp\July5WindowsFormsApp\obj\Debug\July5WindowsFormsApp.Form1.resources
 C:\Users\USER\Desktop\Csharp lab\July5WindowsFormsApp\July5WindowsFormsApp\obj\Debug\July5WindowsFormsApp.DetailPage.resources
 C:\Users\USER\Desktop\Csharp lab\July5WindowsFormsApp\July5WindowsFormsApp\obj\Debug\July5WindowsFormsApp.loginForm.resources
 C:\Users\USER\Desktop\Csharp lab\July5WindowsFormsApp\July5WindowsFormsApp\obj\Debug\July5WindowsFormsApp.MainWindows.resources
 C:\Users\USER\Desktop\Csharp lab\July5WindowsFormsApp\July5WindowsFormsApp\obj\Debug\July5WindowsFormsApp.ProductCard.resources
 C:\Users\USER\Desktop\Csharp lab\July5WindowsFormsApp\July5WindowsFormsApp\obj\Debug\July5WindowsFormsApp.Properties.Resources.resources
 C:\Users\USER\Desktop\Csharp lab\July5WindowsFormsApp\July5WindowsFormsApp\obj\Debug\July5WindowsFormsApp.Search.resources
-C:\Users\USER\Desktop\Csharp lab\July5WindowsFormsApp\July5WindowsFormsApp\obj\Debug\July5WindowsFormsApp.UsingPanel.resources
 C:\Users\USER\Desktop\Csharp lab\July5WindowsFormsApp\July5WindowsFormsApp\obj\Debug\July5WindowsFormsApp.csproj.GenerateResource.cache
 C:\Users\USER\Desktop\Csharp lab\July5WindowsFormsApp\July5WindowsFormsApp\obj\Debug\July5WindowsFormsApp.csproj.CoreCompileInputs.cache
 C:\Users\USER\Desktop\Csharp lab\July5WindowsFormsApp\July5WindowsFormsApp\obj\Debug\July5WindowsFormsApp.exe
@@ -59,3 +57,4 @@ C:\Users\USER\Desktop\Csharp lab\July5WindowsFormsApp\July5WindowsFormsApp\bin\D
 C:\Users\USER\Desktop\Csharp lab\July5WindowsFormsApp\July5WindowsFormsApp\bin\Debug\MySql.Data.xml
 C:\Users\USER\Desktop\Csharp lab\July5WindowsFormsApp\July5WindowsFormsApp\obj\Debug\July5WindowsFormsApp.exe.config
 C:\Users\USER\Desktop\Csharp lab\July5WindowsFormsApp\July5WindowsFormsApp\obj\Debug\July5WindowsFormsApp.csproj.CopyComplete
+C:\Users\USER\Desktop\Csharp lab\July5WindowsFormsApp\July5WindowsFormsApp\obj\Debug\July5WindowsFormsApp.Input.resources
